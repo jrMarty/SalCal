@@ -18,3 +18,7 @@
 .label-size{
     font-size: 20px;
 }
+.float-child {
+    width: 42%;
+    float: left;
+}  
