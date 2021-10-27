@@ -1,51 +1,51 @@
 <div class="detail-box">
-    <div>
+    <div class="flex-container">
         <div class="float-child">
             <label class="label-size" for="ctc">Current ctc</label>
         </div>
         <div class="float-child">
             <input name="ctc" type="number" placeholder="Enter current ctc" 
-            [(ngModel)]="current_ctc" style="font-size: 15px;width: 150px;margin-left: 15px;display: inline;" 
+            [(ngModel)]="current_ctc" style="font-size: 15px;display: inline;" 
             class="form-control">
         </div>
     </div>
-    <div>
+    <div class="flex-container">
         <div class="float-child">
             <label class="label-size" for="hike">Hike</label>
         </div>
         <div class="float-child">
             <input name="hike" type="number" placeholder="Enter hike %" 
-            [(ngModel)]="hike" style="font-size: 15px;width: 150px;margin-left: 15px;display: inline;" 
+            [(ngModel)]="hike" style="font-size: 15px;display: inline;" 
             (ngModelChange)="find_hike()" class="form-control">
         </div>
     </div>
-    <div>
+    <div class="flex-container">
         <div class="float-child">
             <label class="label-size" for="basic_pay_per">Basic Pay %</label>
         </div>
         <div class="float-child">
             <input name="basic_pay_per" type="number" placeholder="Enter basic_pay %" 
-                [(ngModel)]="basic_pay_per" style="font-size: 15px;width: 150px;margin-left: 15px;display: inline;" 
+                [(ngModel)]="basic_pay_per" style="font-size: 15px;display: inline;" 
                 (ngModelChange)="find_hike()" class="form-control">
         </div>
     </div>
-    <div>
+    <div class="flex-container">
         <div class="float-child">
             <label class="label-size" for="vpay">Variable Pay</label>
         </div>
         <div class="float-child">
             <input name="vpay" type="number" placeholder="Enter variable pay" 
-                [(ngModel)]="variable_pay" style="font-size: 15px;width: 150px;margin-left: 15px;display: inline;" 
+                [(ngModel)]="variable_pay" style="font-size: 15px;display: inline;" 
                 (ngModelChange)="find_hike()" class="form-control">
         </div>
     </div>
-    <div>
+    <div class="flex-container">
         <div class="float-child">
             <label class="label-size" for="others">Others</label>
         </div>
         <div class="float-child">
             <input name="others" type="number" placeholder="Other expenses" 
-                [(ngModel)]="others" style="font-size: 15px;width: 150px;margin-left: 15px;display: inline;" 
+                [(ngModel)]="others" style="font-size: 15px;display: inline;" 
                 (ngModelChange)="find_hike()" class="form-control">
         </div>
     </div>

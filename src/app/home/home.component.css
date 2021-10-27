@@ -1,7 +1,6 @@
 .detail-box {
     font-size: 30px;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin: 30px;
 }
 .hike-slider {
     margin-left: 15px;
@@ -18,7 +17,10 @@
 .label-size{
     font-size: 20px;
 }
+.flex-container {
+    display: flex;
+}
 .float-child {
-    width: 42%;
+    width: 50%;
     float: left;
 }  
