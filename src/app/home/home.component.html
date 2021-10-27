@@ -1,0 +1,42 @@
+<div class="detail-box">
+    <div>
+        <label class="label-size" for="ctc">Current ctc : </label>
+        <input name="ctc" type="number" placeholder="Enter current ctc" 
+            [(ngModel)]="current_ctc" style="font-size: 15px;width: 150px;margin-left: 15px;display: inline;" class="form-control">
+    </div>
+    <div>
+        <label class="label-size" for="hike">Hike : </label>
+        <input name="hike" class="hike-slider" type="range" min="0" max="100" step="1" 
+            [(ngModel)]="hike" (ngModelChange)="find_hike()">
+        <output for="hike" class="hike-slider">{{hike}}</output>
+    </div>
+    <div>
+        <label class="label-size" for="basic_pay_per">Basic Pay % : </label>
+        <input name="basic_pay_per" class="hike-slider" type="range" min="0" max="100" step="1" 
+            [(ngModel)]="basic_pay_per" (ngModelChange)="find_hike()">
+        <output for="basic_pay_per" class="hike-slider">{{basic_pay_per}}</output>
+    </div>
+    <div>
+        <label class="label-size" for="vpay">Variable Pay : </label>
+        <input name="vpay" type="number" placeholder="Enter variable pay" 
+            [(ngModel)]="variable_pay" style="font-size: 15px;width: 150px;margin-left: 15px;display: inline;" 
+            (ngModelChange)="find_hike()" class="form-control">
+    </div>
+    <div>
+        <label class="label-size" for="others">Others : </label>
+        <input name="others" type="number" placeholder="Other expenses" 
+            [(ngModel)]="others" style="font-size: 15px;width: 150px;margin-left: 15px;display: inline;" 
+            (ngModelChange)="find_hike()" class="form-control">
+    </div>
+    <button class="btn btn-primary" id="brew-button" (click)="find_hike()">Brew</button>
+    <p class="label-size">Final CTC : {{final_ctc | number : '1.0-0'}}</p>
+    <p class="label-size">Monthly gross : {{monthly_gross | number : '1.0-0'}}</p>
+    <p class="label-size">Net annual : {{net_annual | number : '1.0-0'}}</p>
+    <p class="label-size">Net month : {{net_month | number : '1.0-0'}}</p>
+
+    <p class="label-size" style="margin-top: 50px;">Basic Pay : {{basic_pay | number : '1.0-0'}}</p>
+    <p class="label-size">PF : {{pf | number : '1.0-0'}}</p>
+    <p class="label-size">Gratuvity : {{gratuvity | number : '1.0-0'}}</p>
+    <p class="label-size">VPF : {{vpf | number : '1.0-0'}}</p>
+    <p class="label-size">Total Deductions : {{total_deductions | number : '1.0-0'}}</p>
+</div>
